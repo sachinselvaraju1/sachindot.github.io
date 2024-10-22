@@ -2,7 +2,7 @@
   "basics": {
     "name": "Sachin S",
     "label": "Cybersecurity Analyst & Machine Learning Enthusiast",
-    "image": "https://media.licdn.com/dms/image/v2/D4E03AQGWai2chz9ZDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728744234465?e=1735171200&v=beta&t=ZEYCQL-EJpPpo4ExS9tlF2wRHAi3y8EhLkui--1qkRc",
+    "image": "https://media.licdn.com/dms/image/D4E03AQGWai2chz9ZDA/profile-displayphoto-shrink_800_800/0/1728744234465?e=1735171200&v=beta&t=ZEYCQL-EJpPpo4ExS9tlF2wRHAi3y8EhLkui--1qkRc",
     "email": "sachinscientist001@gmail.com",
     "phone": "",
     "url": "https://github.com/sachinselvaraju1/Projects",
@@ -10,7 +10,7 @@
     "location": {
       "address": "Bengaluru, Karnataka",
       "postalCode": "560029",
-      "city": "Tamilnadu",
+      "city": "Bengaluru",
       "countryCode": "IN",
       "region": "Karnataka"
     },
@@ -27,8 +27,8 @@
       "name": "ATMEGA Software Technologies",
       "position": "Operations Analyst",
       "url": "",
-      "startDate": "2023-January",
-      "endDate": "2023-December",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31",
       "summary": "Collaborated with project executives and clients to streamline workflows, coordinate daily tasks, and improve productivity in a dynamic startup environment.",
       "highlights": [
         "Organized task scheduling for a 15-member team",
@@ -39,54 +39,51 @@
       "name": "IP Security Labs",
       "position": "Freelance Pentester",
       "url": "",
-      "startDate": "2022-March",
+      "startDate": "2022-03-01",
       "endDate": "Present",
-      "summary": "Conducting vulnerability assessments and penetration testing for small-scale startups and non-profits using tools such as Burp Suite and Kali Linux.",
+      "summary": "Conducted vulnerability assessments and penetration testing for small-scale startups and non-profits using tools such as Burp Suite and Kali Linux.",
       "highlights": [
         "Secured digital connections and identified vulnerabilities",
-        "Leveraged knowledge in network security and tools like Metasploit, Nessus and Burp Suite"
+        "Leveraged knowledge in network security and tools like Metasploit, Nessus, and Burp Suite"
       ]
     }
   ],
-  
   "projects": [
     {
       "name": "CNN-based Firewall",
-      "description": "Developed a Convolutional Neural Network (CNN)-based firewall for network security, capable of detecting malicious network traffic and preventing potential cyber threats in real-time.",
+      "description": "Developed a Convolutional Neural Network (CNN)-based firewall for network security, capable of detecting malicious network traffic and preventing potential cyber threats in real time.",
       "highlights": [
-        "Utilized deep learning techniques to classify network traffic as normal or malicious.",
-        "Achieved high accuracy in detecting various types of network-based attacks.",
-        "Integrated with a real-time monitoring system for dynamic threat response."
+        "Utilized deep learning techniques to classify network traffic as normal or malicious",
+        "Achieved high accuracy in detecting various types of network-based attacks",
+        "Integrated with a real-time monitoring system for dynamic threat response"
       ],
       "keywords": ["Deep Learning", "CNN", "Network Security"],
-      "startDate": "2021-October",
-      "endDate": "2022-December",
+      "startDate": "2021-10-01",
+      "endDate": "2022-12-31",
       "url": "https://github.com/sachindots/Projects#deep-learning-firewall"
     },
     {
       "name": "AI-based Malware Detection",
       "description": "Built a machine learning model to detect malware using AI techniques, enabling efficient and automated identification of harmful software.",
       "highlights": [
-        "Trained the model on various malware datasets for high detection accuracy.",
-        "Implemented feature engineering to improve model performance.",
-        "Developed a user-friendly interface for analyzing malware behavior."
+        "Trained the model on various malware datasets for high detection accuracy",
+        "Implemented feature engineering to improve model performance",
+        "Developed a user-friendly interface for analyzing malware behavior"
       ],
       "keywords": ["Machine Learning", "Malware Detection", "AI"],
-      "startDate": "2023-January",
-      "endDate": "2023-April",
+      "startDate": "2023-01-01",
+      "endDate": "2023-04-30",
       "url": "https://github.com/sachindots/Projects#malware-detection-using-convolutional-neural-networks"
     }
-  ]
-}
-
+  ],
   "volunteer": [
     {
       "organization": "Google Student Developer Club",
       "location": "PSGCAS, Coimbatore",
       "position": "Cloud Facilitator & Organizer",
       "url": "",
-      "startDate": "2022-June",
-      "endDate": "2023-April",
+      "startDate": "2022-06-01",
+      "endDate": "2023-04-30",
       "summary": "Organized events and trained students in Google Cloud technologies.",
       "highlights": [
         "Conducted 10+ events in association with Google",
@@ -98,8 +95,8 @@
       "location": "OWASP Erode Chapter, Tamilnadu, India",
       "position": "Chapter Leader",
       "url": "",
-      "startDate": "2021-Feb",
-      "endDate": "2021-Dec",
+      "startDate": "2021-02-01",
+      "endDate": "2021-12-31",
       "summary": "Directed the OWASP Erode Chapter, conducting online CyberAwareness and training events.",
       "highlights": [
         "Led initiatives to promote cybersecurity awareness",
@@ -114,8 +111,8 @@
       "url": "https://christuniversity.in/",
       "area": "Data Analytics",
       "studyType": "Master of Science",
-      "startDate": "2023-June",
-      "endDate": "2025-May",
+      "startDate": "2023-06-01",
+      "endDate": "2025-05-31",
       "score": "3.4/4.0",
       "courses": [
         "Data Analysis using Python and R",
@@ -129,8 +126,8 @@
       "url": "https://www.psgcas.ac.in/",
       "area": "Computer Science and Data Analytics",
       "studyType": "Bachelor of Science",
-      "startDate": "2020-July",
-      "endDate": "2023-May",
+      "startDate": "2020-07-01",
+      "endDate": "2023-05-31",
       "score": "3.4/4.0",
       "courses": [
         "Networking Fundamentals",
@@ -164,7 +161,7 @@
       "name": "Cybersecurity",
       "level": "Proficient",
       "icon": "",
-      "keywords": ["Kali Linux", "Burp Suite", "Metasploit", "Wireshark","Networks"]
+      "keywords": ["Kali Linux", "Burp Suite", "Metasploit", "Wireshark", "Networks"]
     },
     {
       "name": "Data Management",
