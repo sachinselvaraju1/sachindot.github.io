@@ -10,7 +10,7 @@
     "location": {
       "address": "Bengaluru, Karnataka",
       "postalCode": "560029",
-      "city": "Bengaluru",
+      "city": "Tamilnadu",
       "countryCode": "IN",
       "region": "Karnataka"
     },
@@ -27,8 +27,8 @@
       "name": "ATMEGA Software Technologies",
       "position": "Operations Analyst",
       "url": "",
-      "startDate": "2023-01-01",
-      "endDate": "2023-12-31",
+      "startDate": "2023-January",
+      "endDate": "2023-December",
       "summary": "Collaborated with project executives and clients to streamline workflows, coordinate daily tasks, and improve productivity in a dynamic startup environment.",
       "highlights": [
         "Organized task scheduling for a 15-member team",
@@ -39,23 +39,54 @@
       "name": "IP Security Labs",
       "position": "Freelance Pentester",
       "url": "",
-      "startDate": "2022-12-01",
+      "startDate": "2022-March",
       "endDate": "Present",
       "summary": "Conducting vulnerability assessments and penetration testing for small-scale startups and non-profits using tools such as Burp Suite and Kali Linux.",
       "highlights": [
         "Secured digital connections and identified vulnerabilities",
-        "Leveraged knowledge in network security and tools like Metasploit"
+        "Leveraged knowledge in network security and tools like Metasploit, Nessus and Burp Suite"
       ]
     }
   ],
+  {
+  "projects": [
+    {
+      "name": "CNN-based Firewall",
+      "description": "Developed a Convolutional Neural Network (CNN)-based firewall for network security, capable of detecting malicious network traffic and preventing potential cyber threats in real-time.",
+      "highlights": [
+        "Utilized deep learning techniques to classify network traffic as normal or malicious.",
+        "Achieved high accuracy in detecting various types of network-based attacks.",
+        "Integrated with a real-time monitoring system for dynamic threat response."
+      ],
+      "keywords": ["Deep Learning", "CNN", "Network Security"],
+      "startDate": "2021-October",
+      "endDate": "2022-December",
+      "url": "https://github.com/sachindots/Projects#deep-learning-firewall"
+    },
+    {
+      "name": "AI-based Malware Detection",
+      "description": "Built a machine learning model to detect malware using AI techniques, enabling efficient and automated identification of harmful software.",
+      "highlights": [
+        "Trained the model on various malware datasets for high detection accuracy.",
+        "Implemented feature engineering to improve model performance.",
+        "Developed a user-friendly interface for analyzing malware behavior."
+      ],
+      "keywords": ["Machine Learning", "Malware Detection", "AI"],
+      "startDate": "2023-January",
+      "endDate": "2023-April",
+      "url": "https://github.com/sachindots/Projects#malware-detection-using-convolutional-neural-networks"
+    }
+  ]
+}
+
   "volunteer": [
     {
       "organization": "Google Student Developer Club",
       "location": "PSGCAS, Coimbatore",
       "position": "Cloud Facilitator & Organizer",
       "url": "",
-      "startDate": "2022-06-01",
-      "endDate": "2023-04-01",
+      "startDate": "2022-June",
+      "endDate": "2023-April",
       "summary": "Organized events and trained students in Google Cloud technologies.",
       "highlights": [
         "Conducted 10+ events in association with Google",
@@ -64,11 +95,11 @@
     },
     {
       "organization": "OWASP Organization",
-      "location": "Erode Chapter, Tamilnadu",
+      "location": "OWASP Erode Chapter, Tamilnadu, India",
       "position": "Chapter Leader",
       "url": "",
-      "startDate": "2021-02-23",
-      "endDate": "2021-12-28",
+      "startDate": "2021-Feb",
+      "endDate": "2021-Dec",
       "summary": "Directed the OWASP Erode Chapter, conducting online CyberAwareness and training events.",
       "highlights": [
         "Led initiatives to promote cybersecurity awareness",
@@ -83,9 +114,9 @@
       "url": "https://christuniversity.in/",
       "area": "Data Analytics",
       "studyType": "Master of Science",
-      "startDate": "2023-07-01",
-      "endDate": "2025-05-01",
-      "score": "3.3/4.0",
+      "startDate": "2023-June",
+      "endDate": "2025-May",
+      "score": "3.4/4.0",
       "courses": [
         "Data Analysis using Python and R",
         "Machine Learning Algorithms",
@@ -98,8 +129,8 @@
       "url": "https://www.psgcas.ac.in/",
       "area": "Computer Science and Data Analytics",
       "studyType": "Bachelor of Science",
-      "startDate": "2020-07-01",
-      "endDate": "2023-05-01",
+      "startDate": "2020-July",
+      "endDate": "2023-May",
       "score": "3.4/4.0",
       "courses": [
         "Networking Fundamentals",
@@ -113,13 +144,7 @@
       "name": "Google Cloud Digital Leader",
       "date": "2022-11-01",
       "issuer": "Google",
-      "url": ""
-    },
-    {
-      "name": "Google Cloud Infrastructure and Data Management",
-      "date": "2022-12-01",
-      "issuer": "Google",
-      "url": ""
+      "url": "https://www.credential.net/f1d8aac9-fddc-4c4a-8037-98548bc1e0de?key=e425db56936fff548eee0746b60fe6ebdd3992b90aeeb146ed2718f55c166bb7"
     }
   ],
   "skills": [
@@ -139,11 +164,11 @@
       "name": "Cybersecurity",
       "level": "Proficient",
       "icon": "",
-      "keywords": ["Kali Linux", "Burp Suite", "Metasploit", "Wireshark"]
+      "keywords": ["Kali Linux", "Burp Suite", "Metasploit", "Wireshark","Networks"]
     },
     {
       "name": "Data Management",
-      "level": "Proficient",
+      "level": "Advanced",
       "icon": "",
       "keywords": ["MySQL", "MongoDB", "Git/GitHub", "System Analysis"]
     }
@@ -156,7 +181,7 @@
     },
     {
       "language": "Tamil",
-      "fluency": "Fluent",
+      "fluency": "Native",
       "icon": ""
     },
     {
