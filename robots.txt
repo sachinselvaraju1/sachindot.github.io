@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://sachindots.github.io//al-folio/sitemap.xml
+Sitemap: https://sachindots.github.io//sitemap.xml
