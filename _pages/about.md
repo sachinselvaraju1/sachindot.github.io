@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>IP Security Labs</p>
-    <p>Bengaluru, India/p>
+    <p>Batman </p>
+    <p>Bengaluru, India</p>
 
 ---
 
