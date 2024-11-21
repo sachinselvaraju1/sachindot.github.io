@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: My versions of cybertools
 nav: true
 nav_order: 3
-display_categories: [Cybersecurity,Machine_Learning]
+display_categories: [Machine_Learning,Cybersecurity]
 horizontal: false
 ---
 
