@@ -3,19 +3,19 @@ layout: post
 title: Create Your Own Neural Network from Scratch
 date: 2024-02-14 10:00:00
 description: How to make your own neural network using Python from scratch
-tags: formatting code
+tags: neural-network 
 categories: machine-learning
 featured: true
 ---
 
-# Create Your Own Neural Network for Dummies
 In this blog post, we'll explore how to create a simple neural network from scratch using Python. We'll walk through building a Single Layer Perceptron to classify diabetes patients based on a dataset from Kaggle. You don’t need any fancy deep learning libraries like TensorFlow or PyTorch; we'll implement everything from scratch. By the end of this blog, you'll understand the core concepts behind neural networks and have a functional perceptron model. Let's get started!
 
 ---
 
-## What is a Single Layer Perceptron?
+### What is a Single Layer Perceptron?
 
 A **Single Layer Perceptron (SLP)** is the simplest type of artificial neural network. It consists of a single layer of weights that connect the input features to the output node, with an activation function applied to produce the final output. The perceptron was originally introduced by Frank Rosenblatt in 1958 as a binary classifier—its job is to determine whether an input belongs to one of two classes.
+
 ### How Does It Work?
 
 In a Single Layer Perceptron:
@@ -25,6 +25,7 @@ In a Single Layer Perceptron:
 3. **Weighted Sum Calculation**: The perceptron computes the weighted sum of the inputs and biases.
 4. **Activation Function**: The weighted sum is then passed through an activation function that maps the output to a desired range, usually between 0 and 1 for binary classification.
 5. **Output**: The activation function's output is used to make the final prediction.
+   
 ### Understanding a Single Layer Perceptron
 
 In this diagram:
@@ -47,13 +48,18 @@ In this diagram:
 - These inputs are connected to the output neuron through weighted connections (`W1`, `W2`, `W3`).
 - The output neuron computes a weighted sum of the inputs and applies an activation function to produce the output (`Y`).
 
+---
+
 ### Implementing the Custom Perceptron Network
+
 
 ####  Setting Up the Diabetes Dataset
 
 To train our perceptron, we'll use the **Diabetes Dataset** from Kaggle. This dataset contains several medical attributes such as glucose levels, BMI, and insulin levels, which are used to classify whether a patient is diabetic (1) or non-diabetic (0). The target variable is outcome which is in binary format (0 & 1)
 
 Link: [Diabetes Dataset](https://www.kaggle.com/datasets/mathchi/diabetes-data-set/data)
+
+
 ### Data Preparation
 
 First, let's load and prepare the data:
@@ -62,17 +68,15 @@ First, let's load and prepare the data:
 
 There are 8 Features in the dataset
 
-    - Pregnancies: Number of times pregnant
-	- Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
-	- BloodPressure: Diastolic blood pressure (mm Hg)
-	- SkinThickness: Triceps skin fold thickness (mm)
-	- Insulin: 2-Hour serum insulin (mu U/ml)
-	- BMI: Body mass index (weight in kg/(height in m)^2)
-	- DiabetesPedigreeFunction: Diabetes pedigree function
-	- Age: Age (years)
+- Pregnancies: Number of times pregnant
+- Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+- BloodPressure: Diastolic blood pressure (mm Hg)
+- SkinThickness: Triceps skin fold thickness (mm)
+- Insulin: 2-Hour serum insulin (mu U/ml)
+- BMI: Body mass index (weight in kg/(height in m)^2)
+- DiabetesPedigreeFunction: Diabetes pedigree function
+- Age: Age (years)
 	
-**Train-Test Split** : We’ll split the dataset into training and testing sets for model evaluation
-
 **Importing the data and Splitting it into Train and Test sets**
 
 ```
@@ -101,6 +105,7 @@ X - the features
 Y- the target variable
 learning rate - This determines how much the weights are updated at each step. 
 Epoch - Iterating on the each input and modifying the weights each time.
+
 #### Initializing the Weights
 
 We will generate weights for each feature in X_train using np.random.rand function and converting the weights to a numerical list (since the np library generates all values in numpy format)
@@ -197,7 +202,7 @@ print("\nClassification Report:")
 print(class_report)
 ```
 
-#### Result
+#### Results
 
 ```
 Accuracy: 76.62%
