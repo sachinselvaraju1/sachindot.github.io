@@ -1,0 +1,144 @@
+---
+layout: post
+title: CEH Basics - Network Scanning #3
+date: 2024-01-08 10:00:00-0400
+description: Learn about various aspects of Network Scanning
+tags: cybersecurity CEH network
+categories: cyber-security
+giscus_comments: true
+related_posts: true
+featured: true
+---
+
+
+---
+In this blog, we’ll explore **network scanning**, a must have skill for an Ethical Hacker. By understanding the various scanning techniques and methods, you’ll gain a deeper insight into identifying live hosts, open ports, and services within a network. These techniques are vital for assessing potential vulnerabilities and planning robust defenses.
+
+---
+
+### **What Is Network Scanning?**  
+
+**Network Scanning** is the process of probing a network to identify active hosts, open ports, and services. It is often the first step in the reconnaissance phase of ethical hacking or penetration testing. Tools like **Nmap, Hping3, Metasploit, and NetScanTools Pro** are commonly used for scanning to:  
+- Discover live systems.  
+- Detect open ports and running services.  
+- Gather details about the network layout and vulnerabilities.  
+
+---
+
+### **Types of Scans Explained**  
+
+#### 1. **Host Discovery Scans**  
+Used to identify active or live systems in a network. This scan determines which devices are reachable and responding to requests.  
+
+##### **Common Techniques:**  
+- **ICMP Ping Scan:**  
+  Sends ICMP Echo Requests to check if a host is live. Examples:  
+  - Single Target: `nmap -sn -PE (target)`  
+  - Sweep Across IP Range: `nmap -sn -PE (IP Range)`  
+
+  Tools: **Angry IP Scanner, SolarWinds Engineer's Toolset, Advanced IP Scanner**  
+
+- **UDP Ping Scan:**  
+  Probes devices using UDP packets instead of ICMP. Command: `nmap -sn -PU (target)`  
+
+- **TCP SYN Ping:**  
+  Initiates a TCP handshake to detect live hosts. Command: `nmap -sn -PS (target)`  
+
+- **IP Protocol Ping Scan:**  
+  Probes devices for specific IP protocols to identify live hosts. Command: `nmap -sn -PO (target)`  
+
+---
+
+#### 2. **Port Scanning**  
+Identifies open ports on a target system and the services running on those ports. Different scanning methods can determine whether ports are open, closed, or filtered by firewalls.  
+
+##### **Techniques:**  
+
+- **TCP Connect/Full Open Scan:**  
+  Completes the **three-way handshake** to determine if a port is open.  
+  - Command: `nmap -sT -v (target)`  
+  - Advantage: Reliable and straightforward.  
+  - Disadvantage: Easily detectable by firewalls and logging systems.  
+
+- **Stealth Scanning (Half-Open Scan):**  
+  Aborts the handshake before completion, making it harder to detect.  
+  - Command: `nmap -sS -v (target)`  
+  - Purpose: Evades logging mechanisms by keeping connections "half-open."  
+
+- **Inverse TCP Flag Scans:**  
+  Uses unusual TCP flags to infer the port state. Examples include:  
+  - **FIN Scan:** Sends packets with the FIN flag. Command: `nmap -sF -v (target)`  
+  - **Xmas Scan:** Sends packets with FIN, PSH, and URG flags set. Command: `nmap -sX -v (target)`  
+  - **Null Scan:** Sends packets with no flags set. Command: `nmap -sN -v (target)`  
+
+- **UDP Scanning:**  
+  Probes UDP ports to find open ones. Less reliable due to firewall blocking and packet loss.  
+  - Command: `nmap -sU -v (target)`  
+
+- **Third-Party Scans:**  
+  Involves using another host as a "zombie" to conduct scans, such as an **Idle/IPID Header Scan.**  
+  - Command: `nmap -Pn -p -sI (Zombie Host) (target)`  
+
+---
+
+#### 3. **Service Discovery**  
+Identifies the specific services and versions running on open ports.  
+- Command: `nmap -sV (target)`  
+- Purpose: Helps in finding software vulnerabilities based on service versions.  
+
+---
+
+#### 4. **OS Discovery (Banner Grabbing)**  
+Determines the operating system of a target host through responses to specially crafted packets.  
+
+##### **Techniques:**  
+- **Active Banner Grabbing:**  
+  - Sends custom packets to provoke responses that reveal OS details.  
+  - Command: `nmap -O (target)`  
+
+- **Passive Banner Grabbing:**  
+  - Observes error messages, network traffic, or file extensions to infer OS.  
+  - Example: `.aspx` suggests an IIS server on Windows.  
+
+---
+
+### **Advanced Evasion Techniques**  
+
+To bypass firewalls or Intrusion Detection Systems (IDS), attackers use these methods:  
+
+- **Packet Fragmentation:** Breaks data into smaller fragments to evade detection.  
+  - Command: `nmap -f (target)`  
+
+- **Source Port Manipulation:** Spoofs traffic from trusted ports (e.g., HTTP or DNS).  
+  - Command: `nmap -g 80 (target)`  
+
+- **IP Address Decoy:** Generates multiple fake IP addresses to confuse IDS.  
+  - Command: `nmap -D decoy1,decoy2 (target)`  
+
+- **Bad Checksums:** Sends packets with invalid checksums to evade firewalls.  
+  - Command: `nmap --badsum (target)`  
+
+---
+
+### **Countermeasures for Scanning**  
+
+#### Host Discovery Countermeasures:  
+- Block incoming ICMP Echo Requests from untrusted sources.  
+- Deploy IDS systems like Snort to detect and block ping sweeps.  
+
+#### Port Scanning Countermeasures:  
+- Use firewalls to detect and block unauthorized probes.  
+- Limit open ports to essential services only.  
+
+#### Banner Grabbing Countermeasures:  
+- Disable or mask banners to hide OS and service information.  
+- Turn off unnecessary services on hosts.  
+
+#### General Countermeasures:  
+- Use cryptographic protocols (e.g., IPsec, SSH) to encrypt traffic.  
+- Implement multi-layered defenses with firewalls and IDS.  
+
+---
+
+By understanding these scanning techniques and their countermeasures, you’ll know how to secure networks and thwart attackers. Stay tuned for more in the **CEH Basics Series!**
+Hack, Learn, Repeat !
